@@ -1,0 +1,32 @@
+[
+    {
+        "title": "JavaScript for Beginner",
+        "price": "199",
+        "image": "https://i.ibb.co/v3T6nJH/js.png",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "title": "React for Beginner",
+        "price": "199",
+        "image": "https://i.ibb.co/vX1yjXm/React.jpg",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "title": "NodeJS for Beginner",
+        "price": "199",
+        "image": "https://i.ibb.co/3RVwG9H/node.jpg",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "title": "Python for Beginner",
+        "price": "199",
+        "image": "https://i.ibb.co/njKkgs6/python.jpg",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "title": "Django for Beginner",
+        "price": "199",
+        "image": "https://i.ibb.co/kXSJnPc/django.png",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    }
+]
