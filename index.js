@@ -41,6 +41,24 @@ const run = async () => {
             res.send(result);
         });
 
+        app.put('/course/:id', async (req, res) => {
+            const id = req.params.id;
+            const updatedCourse = req.body;
+            const filter = { _id: ObjectId(id) };
+            const options = { upsert: true };
+            const updatedDoc = {
+                $set: {
+                    title: updatedCourse.title,
+                    price: updatedCourse.price,
+                    image: updatedCourse.image,
+                    desc: updatedCourse.desc
+                }
+            };
+            const result = await courseCollection.updateOne(filter, updatedDoc, options);
+            res.send(result);
+
+        });
+
         app.delete('/course/:id', async (req, res) => {
             const id = req.params.id;
             const result = await courseCollection.deleteOne({ _id: ObjectId(id) });
