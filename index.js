@@ -34,6 +34,13 @@ const run = async () => {
             res.send(result)
         });
 
+        app.get('/course/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: ObjectId(id) }
+            const result = await courseCollection.findOne(query);
+            res.send(result);
+        });
+
         app.delete('/course/:id', async (req, res) => {
             const id = req.params.id;
             const result = await courseCollection.deleteOne({ _id: ObjectId(id) });
